@@ -2,10 +2,10 @@
 
 function Profile() {
   return (
-    <section className="bg-gradient-to-br from-gray-200 to-white py-16 px-6 border-b-4 border-gray-800">
+    <section className="bg-gradient-to-br from-gray-200 to-white py-16 px-6 border-b-4 border-yellow-500">
       <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
         {/* Image Section */}
-        <div className="w-60 h-60 rounded-full overflow-hidden shadow-2xl border-4 border-black">
+        <div className="w-60 h-60 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-500">
           <img
             src="/assets/Marci-metzger.png"
             alt="Marci J Metzger"

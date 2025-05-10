@@ -21,6 +21,7 @@ export default function Home() {
       <Gallery />
       <Profile />
       <Services />
+      <hr />
       <Contact />
       <Map />
       <Partnership />

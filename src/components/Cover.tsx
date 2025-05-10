@@ -1,11 +1,11 @@
 "use client";
 function Cover() {
   return (
-    <div>
+    <div className="w-full overflow-hidden rounded-gl shadow-xl sm:w-full ">
       <img
-        className="w-full "
         src="/assets/Coverimage2.png"
-        alt="Profile Photo"
+        alt="Cover Image"
+        className="w-full h-auto object-cover"
       />
     </div>
   );
