@@ -7,6 +7,8 @@ import Profile from "@/components/Profile";
 import Services from "@/components/service";
 import Partnership from "@/components/parntership";
 import Footers from "@/components/Footers";
+import Contact from "@/components/Contact";
+import Map from "@/components/Maps";
 export default function Home() {
   return (
     <div>
@@ -20,11 +22,9 @@ export default function Home() {
       <Profile />
       <Services />
       <Partnership />
+      <Contact />
+      <Map />
       <Footers />
-      {/*    
-      <div className="bg-amber-400  h-96">Maps</div>
-      <div className="bg-amber-400  h-96">Call OR VISIT</div>
-      <div className="bg-amber-400  h-96">Footer</div>  */}
     </div>
   );
 }
