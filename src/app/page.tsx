@@ -24,6 +24,7 @@ export default function Home() {
       <Partnership />
       <Contact />
       <Map />
+
       <Footers />
     </div>
   );

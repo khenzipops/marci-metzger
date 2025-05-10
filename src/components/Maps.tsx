@@ -4,8 +4,10 @@ import React from "react";
 const Map = () => {
   return (
     <div className="bg-gray-800  ">
-      <h1 className="flex justify-center font-serif text-3xl text-white p-4"></h1>
-      <div className="w-full h-96 rounded-xl overflow-hidden shadow-lg px-20">
+      <h1 className="flex justify-center font-serif text-3xl text-white p-4">
+        CHECK OUR LOCATION
+      </h1>
+      <div className="w-full h-96 rounded-xl overflow-hidden shadow-lg px-20 pb-10">
         <iframe
           title="Google Map"
           width="100%"
