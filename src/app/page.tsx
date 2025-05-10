@@ -6,7 +6,7 @@ import Gallery from "@/components/Gallery";
 import Profile from "@/components/Profile";
 import Services from "@/components/service";
 import Partnership from "@/components/parntership";
-import Footer from "@/components/Footer";
+import Footers from "@/components/Footers";
 export default function Home() {
   return (
     <div>
@@ -20,7 +20,7 @@ export default function Home() {
       <Profile />
       <Services />
       <Partnership />
-      <Footer />
+      <Footers />
       {/*    
       <div className="bg-amber-400  h-96">Maps</div>
       <div className="bg-amber-400  h-96">Call OR VISIT</div>

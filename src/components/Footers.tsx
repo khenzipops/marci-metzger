@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaYelp } from "react-icons/fa";
-function Footer() {
+function Footers() {
   return (
     <div className="bg-gray-800 font-semibold text-white ">
       <div className="flex-row- gap-4 text-3xl flex justify-center py-3">
@@ -14,4 +14,4 @@ function Footer() {
     </div>
   );
 }
-export default Footer;
+export default Footers;
