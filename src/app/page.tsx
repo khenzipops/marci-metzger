@@ -4,6 +4,7 @@ import Searchlisting from "@/components/Searchlisting";
 import Details from "@/components/Details";
 import Gallery from "@/components/Gallery";
 import Profile from "@/components/Profile";
+import Services from "@/components/service";
 
 export default function Home() {
   return (
@@ -14,9 +15,9 @@ export default function Home() {
       <Details />
       <Gallery />
       <Profile />
-
+      <Services />
       {/*    
-      <div className="bg-amber-400  h-96">Our SERVICES</div> 
+
       <div className="bg-amber-400  h-96">Partnership</div>
       <div className="bg-amber-400  h-96">Maps</div>
       <div className="bg-amber-400  h-96">Call OR VISIT</div>
