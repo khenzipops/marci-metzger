@@ -7,7 +7,7 @@ function Profile() {
         {/* Image Section */}
         <div className="w-60 h-60 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-400">
           <img
-            src="/assets/marci-metzger.png"
+            src="/assets/Marci-metzger.png"
             alt="Marci J Metzger"
             className="w-full h-full object-cover"
           />
