@@ -20,10 +20,13 @@ const repeatedImages = [
 
 export default function Partnership() {
   return (
-    <div className="bg-gray-100 py-6">
+    <div className="bg-gray-900 py-3">
       <Marquee speed={50} pauseOnHover gradient={false}>
         {repeatedImages.map((src, index) => (
-          <div key={index} className="mx-4">
+          <div
+            key={index}
+            className="mx-4 bg-white border-2 border-white rounded-sm"
+          >
             <Image
               src={src}
               alt={`Logo ${index + 1}`}

@@ -71,7 +71,7 @@ export default function SearchListing() {
           <SelectGroup label="Bedrooms" options={bedrooms} />
           <SelectGroup label="Baths" options={baths} />
 
-          <div className="sm:col-span-2 lg:col-span-3 flex gap-4">
+          <div className="sm:col-span-2 lg:col-span-3 flex gap-4 ">
             <InputGroup label="Min Price" placeholder="e.g. 5000" />
             <InputGroup label="Max Price" placeholder="e.g. 10000" />
           </div>
@@ -81,7 +81,7 @@ export default function SearchListing() {
               type="submit"
               className="bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-700 transition text-base font-medium"
             >
-              Search Listings
+              Search Now
             </button>
           </div>
         </form>
@@ -92,11 +92,11 @@ export default function SearchListing() {
 
 function SelectGroup({ label, options }: { label: string; options: string[] }) {
   return (
-    <div className="flex flex-col">
-      <label className="text-sm font-medium mb-1">{label}</label>
+    <div className="flex flex-col border-b-2">
+      <label className="text-sm font-medium mb-1 ">{label}</label>
       <select
         defaultValue=""
-        className="border border-gray-300 p-2.5 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-800 text-sm"
+        className="border border-gray-300 p-2.5 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-800 text-sm "
       >
         <option value="" disabled hidden>
           -- Select {label} --
@@ -120,11 +120,11 @@ function InputGroup({
 }) {
   return (
     <div className="flex flex-col flex-1">
-      <label className="text-sm font-medium mb-1">{label}</label>
+      <label className="text-sm font-medium mb-1 ">{label}</label>
       <input
         type="text"
         placeholder={placeholder}
-        className="border border-gray-300 p-2.5 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-800 text-sm"
+        className="border-b-2 border-gray-900 p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-800 text-sm "
       />
     </div>
   );
