@@ -12,7 +12,9 @@ export default function Home() {
     <div>
       <Sidebar />
       <Cover />
+      <hr />
       <Searchlisting />
+      <hr />
       <Details />
       <Gallery />
       <Profile />

@@ -58,9 +58,9 @@ const sortBy = [
 
 export default function SearchListing() {
   return (
-    <section className="px-4 py-12 bg-white text-gray-900">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-semibold text-center mb-10 tracking-tight">
+    <section className="px-4 py-12 bg-white text-gray-900 ">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-3xl font-semibold text-center mb-10 tracking-tight ">
           Search Listings
         </h1>
 
@@ -71,9 +71,11 @@ export default function SearchListing() {
           <SelectGroup label="Bedrooms" options={bedrooms} />
           <SelectGroup label="Baths" options={baths} />
 
-          <div className="sm:col-span-2 lg:col-span-3 flex gap-4 ">
-            <InputGroup label="Min Price" placeholder="e.g. 5000" />
-            <InputGroup label="Max Price" placeholder="e.g. 10000" />
+          <div>
+            <div className="sm:col-span-1 lg:col-span-3 flex gap-2">
+              <InputGroup label="Min Price" placeholder="e.g. 500" />
+              <InputGroup label="Max Price" placeholder="e.g. 1000" />
+            </div>
           </div>
 
           <div className="sm:col-span-2 lg:col-span-3 flex justify-end mt-2">
@@ -124,7 +126,7 @@ function InputGroup({
       <input
         type="text"
         placeholder={placeholder}
-        className="border-b-2 border-gray-900 p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-800 text-sm "
+        className="border-b-2 p-2 border-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-800 text-sm "
       />
     </div>
   );
