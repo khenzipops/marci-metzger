@@ -14,17 +14,16 @@ export default function Home() {
     <div>
       <Sidebar />
       <Cover />
-      <hr />
+
       <Searchlisting />
-      <hr />
+
       <Details />
       <Gallery />
       <Profile />
       <Services />
-      <Partnership />
       <Contact />
       <Map />
-
+      <Partnership />
       <Footers />
     </div>
   );
