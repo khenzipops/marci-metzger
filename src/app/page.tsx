@@ -14,9 +14,7 @@ export default function Home() {
     <div>
       <Sidebar />
       <Cover />
-
       <Searchlisting />
-
       <Details />
       <Gallery />
       <Profile />

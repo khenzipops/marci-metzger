@@ -95,8 +95,10 @@ const Contact = () => {
             <h3 className="text-xl font-semibold text-gray-800">
               Office Hours
             </h3>
-            <p className="text-gray-600 mt-2">Open today 08:00 am – 07:00 pm</p>
-            <p className="text-gray-600">Open daily 8:00 am – 7:00 pm</p>
+            <p className="text-gray-600 mt-2">
+              Open today 08:00 am {"-"} 07:00 pm
+            </p>
+            <p className="text-gray-600">Open daily 8:00 am {"-"} 7:00 pm</p>
           </div>
 
           <div className="text-center">
