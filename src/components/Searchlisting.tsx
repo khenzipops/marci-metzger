@@ -72,8 +72,8 @@ export default function SearchListing() {
           <SelectGroup label="Baths" options={baths} />
 
           <div className="sm:col-span-2 lg:col-span-3 flex gap-4">
-            <InputGroup label="Min Price" placeholder="e.g. 50000" />
-            <InputGroup label="Max Price" placeholder="e.g. 100000" />
+            <InputGroup label="Min Price" placeholder="e.g. 5000" />
+            <InputGroup label="Max Price" placeholder="e.g. 10000" />
           </div>
 
           <div className="sm:col-span-2 lg:col-span-3 flex justify-end mt-2">
