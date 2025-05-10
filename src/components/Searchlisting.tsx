@@ -72,7 +72,7 @@ export default function SearchListing() {
           <SelectGroup label="Baths" options={baths} />
 
           <div>
-            <div className="sm:col-span-1 lg:col-span-3 flex gap-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <InputGroup label="Min Price" placeholder="e.g. 500" />
               <InputGroup label="Max Price" placeholder="e.g. 1000" />
             </div>
