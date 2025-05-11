@@ -3,6 +3,17 @@ import { FaWhatsapp } from "react-icons/fa";
 import React from "react";
 
 const Contact = () => {
+  const days = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  const today = new Date().getDay();
+
   return (
     <div className=" bg-gray-50 py-5  ">
       <h1
@@ -92,13 +103,25 @@ const Contact = () => {
           </div>
 
           <div className=" p-6 rounded-xl  text-center">
-            <h3 className="text-xl font-semibold text-gray-800">
-              Office Hours
-            </h3>
-            <p className="text-gray-600 mt-2">
-              Open today 08:00 am {"-"} 07:00 pm
-            </p>
-            <p className="text-gray-600">Open daily 8:00 am {"-"} 7:00 pm</p>
+            <div className=" p-6 rounded-xl  text-center">
+              <h3 className="text-xl font-semibold text-gray-800">
+                Office Hours
+              </h3>
+              <ul className="text-gray-600 mt-2">
+                {days.map((day, index) => (
+                  <li
+                    key={day}
+                    className={
+                      index === (today === 0 ? 6 : today - 1)
+                        ? "font-bold text-gray-800"
+                        : ""
+                    }
+                  >
+                    {day}: 8:00 AM - 7:00 PM
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="text-center">

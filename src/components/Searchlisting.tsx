@@ -94,7 +94,7 @@ export default function SearchListing() {
 
 function SelectGroup({ label, options }: { label: string; options: string[] }) {
   return (
-    <div className="flex flex-col border-b-2">
+    <div className="flex flex-col border-b-1">
       <label className="text-sm font-medium mb-1 ">{label}</label>
       <select
         defaultValue=""
