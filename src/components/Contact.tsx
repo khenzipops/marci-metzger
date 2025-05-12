@@ -1,18 +1,37 @@
-// pages/contact.js
+"use client";
 import { FaWhatsapp } from "react-icons/fa";
-import React from "react";
+import { useState, useEffect } from "react";
 
 const Contact = () => {
   const days = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
-  const today = new Date().getDay();
+  const [currentDayIndex, setCurrentDayIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Set the timezone to America/Los_Angeles (Pahrump follows Pacific Time)
+    const options: Intl.DateTimeFormatOptions = {
+      timeZone: "America/Los_Angeles",
+      weekday: "long",
+    };
+
+    // Get current day in Pahrump timezone
+    const pahrumpDay = new Intl.DateTimeFormat("en-US", options).format(
+      new Date()
+    );
+    const dayIndex = days.findIndex((day) => day === pahrumpDay);
+
+    setCurrentDayIndex(dayIndex);
+  }, []);
+
+  if (currentDayIndex === null) return <div>Loading...</div>;
+  const today = currentDayIndex;
 
   return (
     <div className=" bg-gray-50 py-5  ">
@@ -111,11 +130,7 @@ const Contact = () => {
                 {days.map((day, index) => (
                   <li
                     key={day}
-                    className={
-                      index === (today === 0 ? 6 : today - 1)
-                        ? "font-bold text-gray-800"
-                        : ""
-                    }
+                    className={index === today ? "font-bold text-gray-800" : ""}
                   >
                     {day}: 8:00 AM - 7:00 PM
                   </li>
