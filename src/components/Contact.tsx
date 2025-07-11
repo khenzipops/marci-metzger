@@ -113,12 +113,12 @@ const Contact = () => {
               Contact Details
             </h3>
             <p className="text-gray-600 mt-2">
-              Marci Metzger - THE RIDGE REALTY GROUP
+              Realty Owner - THE RIDGE REALTY GROUP
             </p>
             <p className="text-gray-600">
               3190 HW-160, Suite F, Pahrump, NV 89048
             </p>
-            <p className="text-gray-600 mt-1">(206) 919-6886</p>
+            <p className="text-gray-600 mt-1">(206) 919-2426</p>
           </div>
 
           <div className=" p-6 rounded-xl  text-center">

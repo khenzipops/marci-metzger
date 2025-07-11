@@ -16,12 +16,12 @@ function Profile() {
         {/* Text Section */}
         <div className="text-center md:text-left">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
-            Marci J Metzger
+            Realty Owner
           </h1>
           <p className="text-xl text-gray-700 mb-2">
             REALTOR FOR NEARLY 3 DECADES!
           </p>
-          <p className="text-xl font-semibold text-gray-800"> 206-919-6886</p>
+          <p className="text-xl font-semibold text-gray-800"> 206-919-2426</p>
         </div>
       </div>
     </section>
